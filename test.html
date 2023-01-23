@@ -22,13 +22,13 @@ return date0}
   
 var dateO=new Date();
 var date=new Date();
-date.setMinutes(Math.floor((dateO.getMinutes()-10)/10)*10)
+date.setMinutes(Math.floor((dateO.getMinutes()-20)/10)*10)
 var ymd=date.getFullYear()+Fz(date.getMonth()+1)+Fz(date.getDate());
 var sites={'hc':'/007-','sc':'/067-','bq':'/006-'}
 
 
 function siteimg(site){
-document.getElementById(site).src="https://airtw.epa.gov.tw/AirSitePic/"+ymd+sites[site]+ymd+Fz(date.getHours())+Fz(minute)+".jpg";}
+document.getElementById(site).src="https://airtw.epa.gov.tw/AirSitePic/"+ymd+sites[site]+ymd+Fz(date.getHours())+Fz(date.Minutes())+".jpg";}
 
 document.getElementById('aqi').src="https://airtw.epa.gov.tw/ModelSimulate/"+ymd+'/output_AQI_'+ymd+Fz(date.getHours())+"0000.png";
 
