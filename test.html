@@ -24,7 +24,8 @@ var dateO=new Date();
 var date=new Date();
 date.setMinutes(Math.floor((dateO.getMinutes()-10)/10)*10)
 var ymd=date.getFullYear()+Fz(date.getMonth()+1)+Fz(date.getDate());
-var sites={'hc':'/007-','sc':'/067-','bq':'/006-'}};
+var sites={'hc':'/007-','sc':'/067-','bq':'/006-'}
+
 
 function siteimg(site){
 document.getElementById(site).src="https://airtw.epa.gov.tw/AirSitePic/"+ymd+sites[site]+ymd+Fz(date.getHours())+Fz(minute)+".jpg";}
