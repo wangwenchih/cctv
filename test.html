@@ -28,7 +28,7 @@ var sites={'hc':'/007-','sc':'/067-','bq':'/006-'}
 
 
 function siteimg(site){
-document.getElementById(site).src="https://airtw.epa.gov.tw/AirSitePic/"+ymd+sites[site]+ymd+Fz(date.getHours())+Fz(date.Minutes())+".jpg";}
+document.getElementById(site).src="https://airtw.epa.gov.tw/AirSitePic/"+ymd+sites[site]+ymd+Fz(date.getHours())+Fz(date.getMinutes())+".jpg";}
 
 document.getElementById('aqi').src="https://airtw.epa.gov.tw/ModelSimulate/"+ymd+'/output_AQI_'+ymd+Fz(date.getHours())+"0000.png";
 
