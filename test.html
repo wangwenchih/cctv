@@ -6,13 +6,13 @@
 <img id='hc' src='' height=30% width=30%>
 <img id='bq' src='' height=30% width=30%>
 <img src='http://120.127.252.114/GetData.cgi?CH=1' height=30% width=30% loading='lazy'>
-<img src='http://fmg.focusit.com.tw/image/new/104/newbig.jpg' height=30% width=30%>
-<img src='https://fmg.wra.gov.tw/image/new/1776/newbig.jpg' height=30% width=30%>
-<img src='http://viewer:viewer@117.56.58.2/Media/Streaming?deviceid=26&type=jpg' height=30% width=30%>
+<img src='https://fmg.wra.gov.tw/singlefmg/new/99/newbig.jpg' height=30% width=30%>
+<img src='https://fmg.wra.gov.tw/singlefmg/new/1775/newbig.jpg' height=30% width=30%>
+<img src='https://fmg.wra.gov.tw/singlefmg/new/6302/newbig.jpg' height=30% width=30%>
 <!--<img src='http://viewer:viewer@117.56.55.194/Media/Streaming?deviceid=7&type=jpg' height=30% width=30%>-->
 <img src='https://thbcctv02.thb.gov.tw/T2-46K+400-2?resolution=large' height=30% width=30%>
-<img src='https://www.cwb.gov.tw/Data/fcst_img/QPF_ChFcstPrecip_6_06.png' height=30% width=30%>
-<img src='https://www.cwb.gov.tw/Data/fcst_img/QPF_ChFcstPrecip_6_12.png' height=30% width=30%>
+<img src='https://www.cwa.gov.tw/Data/fcst_img/QPF_ChFcstPrecip_6_06.png' height=30% width=30%>
+<img src='https://www.cwa.gov.tw/Data/fcst_img/QPF_ChFcstPrecip_6_12.png' height=30% width=30%>
 <img id='aqi' src='' height=30% width=30%>
 <script>
 <!-- Fill zero -->
@@ -28,9 +28,9 @@ var sites={'hc':'/007-','sc':'/067-','bq':'/006-'}
 
 
 function siteimg(site){
-document.getElementById(site).src="https://airtw.epa.gov.tw/AirSitePic/"+ymd+sites[site]+ymd+Fz(date.getHours())+Fz(date.getMinutes())+".jpg";}
+document.getElementById(site).src="https://airtw.moenv.gov.tw/AirSitePic/"+ymd+sites[site]+ymd+Fz(date.getHours())+Fz(date.getMinutes())+".jpg";}
 
-document.getElementById('aqi').src="https://airtw.epa.gov.tw/ModelSimulate/"+ymd+'/output_AQI_'+ymd+Fz(date.getHours())+"0000.png";
+document.getElementById('aqi').src="https://airtw.moenv.gov.tw/ModelSimulate/"+ymd+'/output_AQI_'+ymd+Fz(date.getHours())+"0000.png";
 
 siteimg('hc')
 siteimg('bq')
